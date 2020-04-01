@@ -1,6 +1,6 @@
 # 0. Configuration files
 
-Each "plugin" has a indivdual configuration file. You find it in the root of this repository.
+Each "plugin" has a individual configuration file. You find it in the root of this repository.
 
 | Plugin    | Config                        |
 | --------- | ----------------------------- |
