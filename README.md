@@ -89,3 +89,34 @@ I could only manage to enable autofix for css/scss files using File Watchers.
     ![CSS File Watcher](__meta__/File-Watcher-CSS.png)
   - Add new file watcher for CSS with the following settins:
     ![SCSS File Watcher](__meta__/File-Watcher-SCSS.png)
+
+# 4. Prevent ESLint and format errors from being committed
+
+Install [lint-staged](https://github.com/okonet/lint-staged) and [husky](https://github.com/typicode/husky)
+
+```
+npm i -DE lint-staged husky
+```
+
+### 4.1 update package.json
+
+Add a pre-commit hook via husky and run the lint-staged module
+
+```
+...
+"husky": {
+  "hooks": {
+    "pre-commit": "lint-staged"
+  }
+},
+"lint-staged": {
+  "*.{js,ts,tsx}": [
+    "eslint --cache --fix",
+    "gid add"
+  ]
+}
+...
+```
+
+Install (lint-staged)[https://github.com/okonet/lint-staged] and (husky)[https://github.com/typicode/husky]
+Install (lint-staged)[https://github.com/okonet/lint-staged] and (husky)[https://github.com/typicode/husky]
