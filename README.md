@@ -117,6 +117,3 @@ Add a pre-commit hook via husky and run the lint-staged module
 }
 ...
 ```
-
-Install (lint-staged)[https://github.com/okonet/lint-staged] and (husky)[https://github.com/typicode/husky]
-Install (lint-staged)[https://github.com/okonet/lint-staged] and (husky)[https://github.com/typicode/husky]
