@@ -8,12 +8,44 @@ Each "plugin" has a individual configuration file. You find it in the root of th
 | Prettier  | .prettierrc & .prettierignore |
 | Stylelint | .stylelintrc                  |
 
+## .eslintrc example for Typescript and React
+```
+{
+  "parser": "@typescript-eslint/parser",
+  "extends": [
+    "plugin:react/recommended",
+    "plugin:@typescript-eslint/recommended",
+    "prettier/@typescript-eslint",
+    "plugin:prettier/recommended"
+  ],
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "rules": {},
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  }
+}
+```
+
 # 1. Install dependencies
 
 Install prettier, eslint and stylelint
 
 ```
 npm i -DE prettier eslint eslint-config-prettier eslint-plugin-prettier stylelint stylelint-config-prettier stylelint-declaration-use-variable stylelint-order stylelint-prettier stylelint-scss @pro-vision/stylelint-config-pv
+```
+
+# 1.1 Install dependencies for Typescript
+
+Install prettier, eslint, typescript-eslint and stylelint 
+
+```
+npm i -DE prettier eslint eslint-config-prettier eslint-plugin-prettier @typescript-eslint/parser @typescript-eslint/eslint-plugin stylelint stylelint-config-prettier stylelint-declaration-use-variable stylelint-order stylelint-prettier stylelint-scss @pro-vision/stylelint-config-pv
 ```
 
 # 2. VSCode setup
