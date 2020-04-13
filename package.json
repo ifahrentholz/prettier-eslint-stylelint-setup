@@ -4,7 +4,9 @@
   "description": "",
   "main": "src/index.js",
   "scripts": {
-    "test": "echo \\\"Error: no src specified\\\" && exit 1"
+    "test": "echo \\\"Error: no src specified\\\" && exit 1",
+    "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
+    "lint:fix": "npm run lint -- --fix"
   },
   "keywords": [],
   "author": "",
