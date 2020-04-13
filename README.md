@@ -110,10 +110,7 @@ Add a pre-commit hook via husky and run the lint-staged module
   }
 },
 "lint-staged": {
-  "*.{js,jsx,ts,tsx}": [
-    "eslint --cache --fix",
-    "gid add"
-  ]
+  "*.{js,jsx,ts,tsx}": "eslint --cache --fix"
 }
 ...
 ```
